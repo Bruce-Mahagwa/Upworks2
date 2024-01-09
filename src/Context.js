@@ -1,7 +1,6 @@
 // dependencies
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
 //variables
 const UserContext = createContext({});
 
@@ -22,7 +21,7 @@ const UserContextProvider = ({ children }) => {
         setLoading(false);
       })
     }
-  }, []);
+  }, [user]);
 
   // profile
   const [profile, setProfile] = useState({
@@ -56,7 +55,7 @@ const UserContextProvider = ({ children }) => {
         console.log(e)
       })
     }
-  }, [refreshAllJobs]);
+  }, [refreshAllJobs, user]);
   // frelancer get submitted proposals
   const [freelancerProposals, setFreelancerProposals] = useState(null);
   const [refreshProposals, setRefreshProposals] = useState(false);
