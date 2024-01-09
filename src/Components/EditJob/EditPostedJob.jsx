@@ -39,7 +39,7 @@ const EditPostedJob = () => {
         console.log(e);
       })
     }
-  }, []);
+  }, [clientSingleJob, setClientSingleJob, id]);
   function handleChange(e) {
     const { value, name } = e.target;
     setPostedJobDetails((prev) => {
