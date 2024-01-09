@@ -21,7 +21,7 @@ const UserContextProvider = ({ children }) => {
         setLoading(false);
       })
     }
-  }, [user]);
+  }, []);
 
   // profile
   const [profile, setProfile] = useState({
@@ -55,7 +55,7 @@ const UserContextProvider = ({ children }) => {
         console.log(e)
       })
     }
-  }, [refreshAllJobs, user]);
+  }, [refreshAllJobs]);
   // frelancer get submitted proposals
   const [freelancerProposals, setFreelancerProposals] = useState(null);
   const [refreshProposals, setRefreshProposals] = useState(false);
