@@ -35,7 +35,7 @@ const Profile = () => {
       console.log(err);
       setLoading(false);
     })
-  }, [id, checkUpdate, setProfile])
+  }, [id, checkUpdate])
   
   if (profile === null) {
     return <Navigate to={"/dashboard/addprofile/" + id} />
