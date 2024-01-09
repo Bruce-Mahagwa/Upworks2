@@ -1,11 +1,9 @@
 // dependencies
 import { useContext, useEffect, useState } from "react";
-import axios from "axios";
 import { Navigate } from "react-router-dom";
 // files
 import { UserContext } from "../../Context";
 const Content = (singleJob) => {
-  const { allJobs, setRefreshAllJobs } = useContext(UserContext);
   const [id, setId] = useState(null);
   function singleJobPage(e) {
     setId(e.target.getAttribute("data-name"));
@@ -61,7 +59,7 @@ const HomePage = () => {
   const { allJobs, setRefreshAllJobs } = useContext(UserContext);
   useEffect(() => {
     setRefreshAllJobs(true);
-  }, [])
+  }, [setRefreshAllJobs])
   return (
     <main id="home_page_content_main">
       <header>
