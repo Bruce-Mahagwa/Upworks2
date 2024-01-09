@@ -68,7 +68,7 @@ const ClientHomeContent = () => {
     setRefresh(true);
   }, [])
   if (!postedJobs) {
-    return <Loading />
+    return <h2>You haven't Posted any Jobs Yet</h2>
   }
   return (
     <main id="home_page_content_main">
