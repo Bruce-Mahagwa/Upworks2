@@ -33,7 +33,7 @@ const ClientSingleJob = () => {
     }).catch((e) => {
       console.log(e);
     });
-  }, [setClientSingleJob, id]);
+  }, []);
   if (refresh === "deleted") {
     return <Navigate to={"/dashboard"} />
   }
