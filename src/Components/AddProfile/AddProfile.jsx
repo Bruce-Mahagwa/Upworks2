@@ -1,7 +1,7 @@
 // dependencies
 import { useState, useContext, useEffect } from "react";
 import axios from "axios";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate} from "react-router-dom";
 // files
 import { UserContext } from "../../Context";
 import Loading from "../Loading/Loading";
