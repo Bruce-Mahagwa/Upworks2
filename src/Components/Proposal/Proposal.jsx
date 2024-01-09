@@ -27,7 +27,7 @@ const Proposal = () => {
         console.log(e);
       });
     }
-  }, [id, singleJob, setSingleJob]);
+  }, []);
   function submitProposal() {
     setLoading(styles)
     setDisabled(true)
