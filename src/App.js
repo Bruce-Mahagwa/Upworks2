@@ -22,7 +22,7 @@ import axios from "axios";
 export default function App() {
 
   // default axios urls
-  axios.defaults.baseURL = "upworks-backend.onrender.com";
+  axios.defaults.baseURL = "https://upworks-backend.vercel.app";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
