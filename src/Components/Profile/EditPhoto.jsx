@@ -66,7 +66,7 @@ const EditPhoto = ({ setState, setPosition, setCheckUpdate }) => {
           <main id="edit_profile_container_pic" className="edit_profile_container"> 
             <section>
               {loadingImage && <Loading />}
-              <img src={image ? `https://upworksbackend.brucejacob.repl.co/uploads/${image}`:`https://upworksbackend.brucejacob.repl.co/uploads/${profile?.image}`} alt="profile picture" />
+              <img src={image ? `https://upworksbackend.brucejacob.repl.co/uploads/${image}`:`https://upworksbackend.brucejacob.repl.co/uploads/${profile?.image}`} />
             </section>
 
             <section>
