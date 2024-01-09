@@ -48,14 +48,14 @@ const MyProposals = () => {
         setFreelancerProposals(res.data);
       })
     }
-  }, [])
+  }, [setFreelancerProposals])
   useEffect(() => {
     if (user) {
       axios.get("/freelancerproposals/" + user?._id).then((res) => {
         setFreelancerProposals(res.data);
       })
     }
-  }, [refreshProposals])
+  }, [refreshProposals, setFreelancerProposals])
   return (
     <>
       {!user && <Loading />}
