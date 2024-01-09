@@ -59,7 +59,7 @@ const HomePage = () => {
   const { allJobs, setRefreshAllJobs } = useContext(UserContext);
   useEffect(() => {
     setRefreshAllJobs(true);
-  }, [setRefreshAllJobs])
+  }, [])
   return (
     <main id="home_page_content_main">
       <header>
