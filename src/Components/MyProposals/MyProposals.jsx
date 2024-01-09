@@ -55,7 +55,7 @@ const MyProposals = () => {
         setFreelancerProposals(res.data);
       })
     }
-  }, [refreshProposals, setFreelancerProposals])
+  }, [])
   return (
     <>
       {!user && <Loading />}
