@@ -66,7 +66,7 @@ const ClientHomeContent = () => {
   const { postedJobs, setRefresh } = useContext(UserContext);
   useEffect(() => {
     setRefresh(true);
-  }, [])
+  }, [setRefresh])
   if (!postedJobs) {
     return <Loading />
   }
